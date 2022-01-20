@@ -13,16 +13,33 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
-
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+    
         td, th {
             border: 1px solid black;
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         td.num {
             text-align: right;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         thead, tfoot {
@@ -50,8 +67,8 @@
     <table>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Cidade</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
@@ -173,6 +190,13 @@
             </tr>
         </tfoot>
     </table>
+    
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto quaerat quam incidunt accusamus, dolores eveniet, doloremque placeat animi, voluptas est debitis consequatur aliquid praesentium libero nihil fugiat similique eius?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error ipsa quaerat placeat, ullam expedita laboriosam reiciendis sequi voluptatem reprehenderit perspiciatis nulla libero maiores repellat similique illo accusamus illum odio voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto quaerat quam incidunt accusamus, dolores eveniet, doloremque placeat animi, voluptas est debitis consequatur aliquid praesentium libero nihil fugiat similique eius?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error ipsa quaerat placeat, ullam expedita laboriosam reiciendis sequi voluptatem reprehenderit perspiciatis nulla libero maiores repellat similique illo accusamus illum odio voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto quaerat quam incidunt accusamus, dolores eveniet, doloremque placeat animi, voluptas est debitis consequatur aliquid praesentium libero nihil fugiat similique eius?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error ipsa quaerat placeat, ullam expedita laboriosam reiciendis sequi voluptatem reprehenderit perspiciatis nulla libero maiores repellat similique illo accusamus illum odio voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto quaerat quam incidunt accusamus, dolores eveniet, doloremque placeat animi, voluptas est debitis consequatur aliquid praesentium libero nihil fugiat similique eius?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error ipsa quaerat placeat, ullam expedita laboriosam reiciendis sequi voluptatem reprehenderit perspiciatis nulla libero maiores repellat similique illo accusamus illum odio voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi iusto quaerat quam incidunt accusamus, dolores eveniet, doloremque placeat animi, voluptas est debitis consequatur aliquid praesentium libero nihil fugiat similique eius?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error ipsa quaerat placeat, ullam expedita laboriosam reiciendis sequi voluptatem reprehenderit perspiciatis nulla libero maiores repellat similique illo accusamus illum odio voluptatum.</p>
     
 </body>
 </html>
